@@ -14,7 +14,7 @@ const BlogT = () => {
         <Link to="#">Opinion</Link>
         <Link to="#">Art</Link>
         </div>
-        <div className="artWrapper">
+        {/* <div className="artWrapper">
             <div className="artBox">
                 <img src={lambo} alt='lambo' />
                 <div className="artInfo">
@@ -57,7 +57,7 @@ const BlogT = () => {
                 </div>
 
             </div>
-        </div>
+        </div> */}
 
     </BlogWrapper>
   )
