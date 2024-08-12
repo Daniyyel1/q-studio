@@ -37,7 +37,7 @@ export const BannerWrapper = styled.div`
 
   .bigBanner img {
     width: 100%;
-    height: 75vh;
+    height: 55vh;
   }
 
   .bgInfo,
@@ -77,7 +77,7 @@ export const BannerWrapper = styled.div`
 
   .bannerPostCard img {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
   }
 
   .bannerPostCard h2 {
@@ -111,7 +111,7 @@ export const TrendingWrapper = styled.section`
 
   .trendBox img {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
   }
 
   .trendBox h2 {
@@ -177,7 +177,7 @@ export const ArticlesWrapper = styled.section`
 
   .artBox img {
     width: 300px;
-    height: 40vh;
+    height: 30vh;
   }
 
   .artInfo span {
@@ -317,13 +317,14 @@ export const BookContainer = styled.div`
 
 export const BookCardWrapper = styled.section`
 
+
   img{
     width: 100%;
-    height: 40vh;
+    height: 30vh;
   }
 
   h1{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 

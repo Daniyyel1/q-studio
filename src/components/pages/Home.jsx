@@ -5,11 +5,11 @@ import Articles from '../subComponents/Articles'
 
 const Home = () => {
   return (
-    <home>
+    <div>
     <Banner />
      <Trending />
      <Articles />
-    </home>
+    </div>
   )
 }
 
