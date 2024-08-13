@@ -4,9 +4,9 @@ import BookShopCard from "./BookShopCard";
 
 const BookShops = () => {
   return (
-    <div className="booksWrapper">
-      {Items[0].bookProducts?.map((bookProduct) => {
-        return <BookShopCard item={bookProduct} key={bookProduct.key} />;
+    <div className="bookShopWrapper">
+      {Items[1].categorizedBooks?.map((categorizedBook) => {
+        return <BookShopCard item={categorizedBook} key={categorizedBook.key} />;
       })}
     </div>
   );
