@@ -323,6 +323,7 @@ export const BookCardWrapper = styled.section`
     height: 30vh;
   }
 
+
   h1{
     font-size: 1.2rem;
     font-weight: 500;
@@ -341,4 +342,142 @@ export const BookCardWrapper = styled.section`
     width: 100%;
 
   }
-`;
+`
+
+export const BookShopCardWrapper = styled.section`
+
+  display:flex;
+  gap:30px;
+  padding-block:1rem;
+ 
+
+img{
+  height: 270px;
+  width: 180px;
+
+}
+
+.wrapperD span{
+  text-transform:uppercase;
+  font-size:12px;
+  opacity:.6;
+  display:block;
+}
+
+.wrapperD h2{
+  font-weight:300;
+  padding-block: .5rem;
+}
+
+.wrapperD p{
+  opacity: .6;
+  width:780px;
+  padding-block:.5rem
+}
+
+
+.wrapperD button{
+  height:58px;
+  width:180px;
+  margin-top:20px;
+  background-color:transparent;
+  border:1px solid;
+}
+
+.span{
+  display:flex;
+  gap: 15px;
+  align-items:center;
+}
+
+.span h3:first-child{
+  font-size:33px;
+}
+
+.span h3:last-child{
+  opacity: .3;
+  text-decoration:line-through;
+}
+
+`
+
+export const BlogCardWrapper = styled.section`
+ 
+ display:flex;
+ margin-top:50px;
+ gap:30px;
+
+ img{
+  height:190px;
+  width:300px;
+ }
+
+ .blogCardContent span{
+  text-transform:capitalize;
+  display:block;
+  opacity:.5;
+ }
+
+ .blogCardContent span:last-child{
+  font-size:10px;
+  text-transform:unset;
+  padding-block:10px;
+ }
+
+ .blogCardContent h3{
+  font-size: 27px;
+  font-weight:500;
+  width:730px;
+  padding-block:10px;
+ }
+
+ .blogCardContent p{
+  font-size: 17px;
+  opacity:.8;
+  padding-block:10px;
+  width:700px;
+ }
+
+
+
+`
+
+export const PodcastsShopCardWrapper = styled.section`
+
+display:flex;
+margin-top:60px;
+justify-content:center;
+gap:30px;
+
+
+img{
+  height:165px;
+  width:250px;
+}
+
+.podcastInfo span{
+  display:block;
+  text-transform:capitalize;
+  justify-content:center;
+  opacity:.5
+}
+
+.podcastInfo h3{
+  padding-block:.7rem;
+  font-weight:550;
+  width:550px;
+  font-size:22px;
+}
+
+.podcastInfo p{
+  width:680px;
+  opacity:.7
+}
+
+.podcastInfo span:last-child{
+  padding-block:1rem;
+  opacity:.5
+}
+
+
+`
