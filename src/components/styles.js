@@ -474,7 +474,7 @@ export const ShopWrapper =  styled.div`
     .searchInput{
       border-bottom: 2px solid black;
       max-width: 400px;
-      margin: auto;
+      margin: 2rem auto;
     }
 
     .searchInput>input{

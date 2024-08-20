@@ -9,9 +9,10 @@ const Search = ({onChange}) => {
 
   return (
     <div className="searchInput">
+
       <input
         type="search"
-        placeholder="search for a book.."
+        placeholder="Search for a book.."
         onChange={handleChange}
       />
     </div>

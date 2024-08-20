@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BookShopCardWrapper, ShopWrapper } from "../styles";
+import { ShopWrapper } from "../styles";
 import Search from "../subComponents/Search";
 import { Items } from "../../Data";
 import BookProduct from "../subComponents/BookProduct";
@@ -17,7 +17,6 @@ const ShopPage = () => {
   Items[1].categorizedBooks?.filter((bookItem) => bookItem.author.toLowerCase().includes(searchValue.toLowerCase()))
   :  Items[1].categorizedBooks
 
-  console.log(filteredBooks)
 
   return (
     <ShopWrapper className="genLayout">
