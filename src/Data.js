@@ -108,14 +108,14 @@ export const Items = [
     categorizedBlogs: [
       {
         img:imgOne,
-        author: 'elen jhosh',
+        author: 'elen',
         title: 'The Definitive Helmut Newton Photobook is Reissued-in Maniature-for His 100th Birthday',
         desp: 'The photgrapher,whose provocative work rose to prominense in the 1970s against a backdrop of the second-wave feminist movement,was one of the most impactful visual creators of his time.',
         date: 'Feb 11 - 5min read'
       },
       {
         img:imgOne,
-        author: 'elen jhosh',
+        author: 'elen bride',
         title: 'Made You Look:A True Story About Fake Art-When Wanting to Believe Is Just Not Enough',
         desp: 'The story of the most significant art fraud in history where ruined reputations and wounded egos mattered more than money.',
         date: 'Feb 11 - 5min read'
