@@ -1,21 +1,24 @@
-import React from 'react'
-import { BlogCardWrapper } from '../styles'
+import React from "react";
+import { BlogCardWrapper } from "../styles";
+import { Link } from "react-router-dom";
 
-const BlogCard = ({item}) => {
+const BlogCard = ({ item }) => {
   return (
     <BlogCardWrapper>
-     <img src={item.img} alt='car' />
+      <img src={item.img} alt="car" />
 
-     <div className="blogCardContent">
-     <span>by {item.author}</span>
-     <h3>{item.title}</h3>
-     <p>{item.desp}</p>
-     <span>{item.date}</span>
+      <div className="blogCardContent">
+        <span>by {item.author}</span>
+        <h3>{item.title}</h3>
+        <p>{item.desp}</p>
 
-     </div>
- 
+        <div className="infoTag">
+          <span>{item.date}</span>
+          <Link to={`/book/${item.author}`}>Read more...</Link>
+        </div>
+      </div>
     </BlogCardWrapper>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

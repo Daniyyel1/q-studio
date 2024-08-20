@@ -8,6 +8,7 @@ import Books from "./components/pages/Books"
 import About from "./components/pages/About"
 import CartPage from "./components/pages/CartPage"
 import ShopPage from './components/pages/ShopPage'
+import BookDetailsPage from './components/subComponents/BookDetailsPage'
 
 
 
@@ -21,11 +22,10 @@ function App() {
         <Route path='/blog' element={<Blog />}/>
         <Route  path='/podcasts' element={<PodCasts />}/>
         <Route  path='/books' element={<Books />}/>
+        <Route  path='book/:id' element={<BookDetailsPage />}/>
         <Route  path='/about' element={<About />}/>
         <Route  path='/cart' element={<CartPage />}/>
         <Route  path='/shop' element={<ShopPage />}/>
-        
-
       </Route>
     </Routes>
 

@@ -402,8 +402,13 @@ export const BlogCardWrapper = styled.section`
     height: 190px;
     width: 300px;
   }
+  .infoTag{
+    display: flex;
+    opacity: 0.5;
+    justify-content: space-between;
+  }
 
-  .blogCardContent span {
+  .infoTag>span {
     text-transform: capitalize;
     display: block;
     opacity: 0.5;
