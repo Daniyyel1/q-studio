@@ -37,7 +37,7 @@ export const BannerWrapper = styled.div`
 
   .bigBanner img {
     width: 100%;
-    height: 75vh;
+    height: 55vh;
   }
 
   .bgInfo,
@@ -77,7 +77,7 @@ export const BannerWrapper = styled.div`
 
   .bannerPostCard img {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
   }
 
   .bannerPostCard h2 {
@@ -111,7 +111,7 @@ export const TrendingWrapper = styled.section`
 
   .trendBox img {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
   }
 
   .trendBox h2 {
@@ -141,6 +141,7 @@ export const TrendingWrapper = styled.section`
   }
 `;
 
+// styling for Article
 export const ArticlesWrapper = styled.section`
   padding-block: 4rem;
 
@@ -177,7 +178,7 @@ export const ArticlesWrapper = styled.section`
 
   .artBox img {
     width: 300px;
-    height: 40vh;
+    height: 30vh;
   }
 
   .artInfo span {
@@ -308,7 +309,7 @@ export const BookContainer = styled.div`
     font-size: 50px;
   }
 
-  .booksWrapper{
+  .booksWrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
@@ -326,65 +327,77 @@ export const BookContainer = styled.div`
 `;
 
 export const BookCardWrapper = styled.section`
-
-  img{
+  img {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
   }
 
-
-  h1{
-    font-size: 1.7rem;
+  h1 {
+    font-size: 1.2rem;
     font-weight: 500;
   }
 
-  span{
+  span {
     font-size: 12px;
-    opacity: .4;
+    opacity: 0.4;
     text-transform: uppercase;
-    margin-block: .5rem;
+    margin-block: 0.5rem;
     display: block;
   }
 
-  button{
-    padding: .7rem ;
+  button {
+    padding: 0.7rem;
     width: 100%;
-
   }
-`
+`;
 
 export const BookShopCardWrapper = styled.section`
+  display: flex;
+  gap: 30px;
+  padding-block: 1rem;
 
-  display:flex;
-  gap:30px;
-  padding-block:1rem;
- 
+  img {
+    height: 270px;
+    width: 180px;
+  }
 
-img{
-  height: 270px;
-  width: 180px;
+  .wrapperD span {
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.6;
+    display: block;
+  }
 
-}
+  .wrapperD h2 {
+    font-weight: 300;
+    padding-block: 0.5rem;
+  }
 
-.wrapperD span{
-  text-transform:uppercase;
-  font-size:12px;
-  opacity:.6;
-  display:block;
-}
+  .wrapperD p {
+    opacity: 0.6;
+    width: 780px;
+    padding-block: 0.5rem;
+  }
 
-.wrapperD h2{
-  font-weight:300;
-  padding-block: .5rem;
-}
+  .wrapperD button {
+    height: 58px;
+    width: 180px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid;
+  }
 
-.wrapperD p{
-  opacity: .6;
-  width:780px;
-  padding-block:.5rem
-}
+  .span {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
 
+  .span h3:first-child {
+    font-size: 33px;
+  }
 
+<<<<<<< HEAD
 .wrapperD button{
   height:58px;
   width:180px;
@@ -410,85 +423,111 @@ img{
 
 
 `
+=======
+  .span h3:last-child {
+    opacity: 0.3;
+    text-decoration: line-through;
+  }
+`;
+>>>>>>> ffd18461f1f4376f3f501681f193aeb7a5b17556
 
 export const BlogCardWrapper = styled.section`
- 
- display:flex;
- margin-top:50px;
- gap:30px;
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
 
- img{
-  height:190px;
-  width:300px;
- }
+  img {
+    height: 190px;
+    width: 300px;
+  }
+  .infoTag{
+    display: flex;
+    opacity: 0.5;
+    justify-content: space-between;
+  }
 
- .blogCardContent span{
-  text-transform:capitalize;
-  display:block;
-  opacity:.5;
- }
+  .infoTag>span {
+    text-transform: capitalize;
+    display: block;
+    opacity: 0.5;
+  }
 
- .blogCardContent span:last-child{
-  font-size:10px;
-  text-transform:unset;
-  padding-block:10px;
- }
+  .blogCardContent span:last-child {
+    font-size: 10px;
+    text-transform: unset;
+    padding-block: 10px;
+  }
 
- .blogCardContent h3{
-  font-size: 27px;
-  font-weight:500;
-  width:730px;
-  padding-block:10px;
- }
+  .blogCardContent h3 {
+    font-size: 27px;
+    font-weight: 500;
+    width: 730px;
+    padding-block: 10px;
+  }
 
- .blogCardContent p{
-  font-size: 17px;
-  opacity:.8;
-  padding-block:10px;
-  width:700px;
- }
-
-
-
-`
+  .blogCardContent p {
+    font-size: 17px;
+    opacity: 0.8;
+    padding-block: 10px;
+    width: 700px;
+  }
+`;
 
 export const PodcastsShopCardWrapper = styled.section`
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  gap: 30px;
 
-display:flex;
-margin-top:60px;
-justify-content:center;
-gap:30px;
+  img {
+    height: 165px;
+    width: 250px;
+  }
+
+  .podcastInfo span {
+    display: block;
+    text-transform: capitalize;
+    justify-content: center;
+    opacity: 0.5;
+  }
+
+  .podcastInfo h3 {
+    padding-block: 0.7rem;
+    font-weight: 550;
+    width: 550px;
+    font-size: 22px;
+  }
+
+  .podcastInfo p {
+    width: 680px;
+    opacity: 0.7;
+  }
+
+  .podcastInfo span:last-child {
+    padding-block: 1rem;
+    opacity: 0.5;
+  }
+`;
 
 
-img{
-  height:165px;
-  width:250px;
-}
+// styling for shop page
+export const ShopWrapper =  styled.div`
+    /* border: 2px solid red; */
 
-.podcastInfo span{
-  display:block;
-  text-transform:capitalize;
-  justify-content:center;
-  opacity:.5
-}
+    .searchInput{
+      border-bottom: 2px solid black;
+      max-width: 400px;
+      margin: 2rem auto;
+    }
 
-.podcastInfo h3{
-  padding-block:.7rem;
-  font-weight:550;
-  width:550px;
-  font-size:22px;
-}
+    .searchInput>input{
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: .3rem 1rem;
+    }
 
-.podcastInfo p{
-  width:680px;
-  opacity:.7
-}
-
-.podcastInfo span:last-child{
-  padding-block:1rem;
-  opacity:.5
-}
-
+<<<<<<< HEAD
 `
 
 export const ShopWrapper = styled.section`
@@ -524,6 +563,24 @@ export const BookProductWrapper = styled.section`
   width:150px;
 }
 
+
+=======
+    .book_product_container{
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+>>>>>>> ffd18461f1f4376f3f501681f193aeb7a5b17556
+
+`
+
+// styling for book product wrapper 
+export const BookProductWrapper = styled.div`
+  .bookImg{
+    /* border: 2px solid red; */
+    width: 100%;
+  }
 
 
 `
