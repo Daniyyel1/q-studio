@@ -8,10 +8,6 @@ import Books from "./components/pages/Books"
 import About from "./components/pages/About"
 import CartPage from "./components/pages/CartPage"
 import ShopPage from './components/pages/ShopPage'
-<<<<<<< HEAD
-=======
-import BookDetailsPage from './components/subComponents/BookDetailsPage'
->>>>>>> ffd18461f1f4376f3f501681f193aeb7a5b17556
 
 
 
@@ -25,16 +21,11 @@ function App() {
         <Route path='/blog' element={<Blog />}/>
         <Route  path='/podcasts' element={<PodCasts />}/>
         <Route  path='/books' element={<Books />}/>
-        <Route  path='book/:id' element={<BookDetailsPage />}/>
         <Route  path='/about' element={<About />}/>
         <Route  path='/cart' element={<CartPage />}/>
-<<<<<<< HEAD
         <Route path='/shoppage' element={<ShopPage />} />
         
 
-=======
-        <Route  path='/shop' element={<ShopPage />}/>
->>>>>>> ffd18461f1f4376f3f501681f193aeb7a5b17556
       </Route>
     </Routes>
 
