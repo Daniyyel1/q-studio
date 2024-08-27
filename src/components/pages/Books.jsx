@@ -24,11 +24,6 @@ const Books = () => {
 
       <BlogT />
       <BookShops />
-<<<<<<< HEAD
-      <button>Show more</button>
-=======
-      {/* button code */}
->>>>>>> ffd18461f1f4376f3f501681f193aeb7a5b17556
     </BookContainer>
   );
 };
