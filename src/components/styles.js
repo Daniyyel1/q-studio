@@ -313,6 +313,16 @@ export const BookContainer = styled.div`
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
   }
+
+  button{
+    width:100%;
+    height:40px;
+    margin-top:20px;
+    font-size:15px;
+    font-weight:600;
+    cursor: pointer;
+  }
+
 `;
 
 export const BookCardWrapper = styled.section`
@@ -398,6 +408,7 @@ img{
   text-decoration:line-through;
 }
 
+
 `
 
 export const BlogCardWrapper = styled.section`
@@ -477,6 +488,42 @@ img{
   padding-block:1rem;
   opacity:.5
 }
+
+`
+
+export const ShopWrapper = styled.section`
+ 
+
+ .searchInput{
+  max-width:400px;
+  margin:2rem auto;
+  border-bottom:2px solid;
+ }
+
+ .searchInput input{
+  width:100%;
+  outline: none;
+  border:none;
+  padding:.3rem 1rem;
+ }
+
+.book_product_container{
+  margin-top:2rem;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:25px;
+
+}
+
+`
+
+export const BookProductWrapper = styled.section`
+
+.bookImg{
+  height:150px;
+  width:150px;
+}
+
 
 
 `

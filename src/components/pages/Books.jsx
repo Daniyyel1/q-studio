@@ -24,6 +24,7 @@ const Books = () => {
 
       <BlogT />
       <BookShops />
+      <button>Show more</button>
     </BookContainer>
   );
 };

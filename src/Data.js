@@ -1,4 +1,10 @@
 import imgOne from "./assets/lambo.jpg";
+import said from "./assets/said.jpg";
+import newyork from "./assets/new york.jpeg";
+import comics from "./assets/comics.jpg"
+import truly from "./assets/truly.jpg"
+import list from "./assets/list.jpg"
+
 
 export const Items = [
   {
@@ -35,7 +41,7 @@ export const Items = [
   {
     categorizedBooks: [
       {
-       img: imgOne,
+       img: said,
        author: 'elen jhosh',
        title: 'Be Where Your Feet Are: Seven Principles to Keep You Present, Grounded, and Thriving',
        descp: 'When we are moving at 115 MPH, we rarely see the wall coming. But it comes for all of us. The sudden loss of a much beloved friend, the excruciatingly long departure of a parent with Alzheimer, We grasp for lessons for meaning, for learnings.',
@@ -43,7 +49,7 @@ export const Items = [
        oldPrice: 33.30,
       },
       {
-       img: imgOne,
+       img: newyork,
        author: "nuala o'connor",
        title: 'Nora',
        descp: "n her fiction, Nuala O'Connor has often explored the private lives of historical figures, she did it in 2015's Miss Emily, about Emily Dickinson, and in 2018's Becoming Belle, about singer and dancer Belle Bilton. She takes the same approach in Nora, a long but lively portrait of James Joyce's wife and muse, Nora Barnacle Joyce...",
@@ -51,7 +57,7 @@ export const Items = [
        oldPrice: 17.80,
       },
       {
-       img: imgOne,
+       img: comics,
        author: 'kayleen shaefer',
        title: "But You're Still So Young: How Thirtysomethings Are Redefining Adulthood",
        descp: " 'What you haven't done by 30 you're not likely to do', John Updike had the nerve to write in his 1971 novel, Rabbit Redúx, making a mockery of the idea of moving out of one's 20s and into the decade when everything is supposed to magically fall into place. ",
@@ -59,7 +65,7 @@ export const Items = [
        oldPrice: 21.40,
       },
       {
-       img: imgOne,
+       img: list,
        author: 'alexander nemerov',
        title: 'Fierse Poise: Helen Frankenthaler and 1950s New York',
        descp: "Neither conventional biography nor aris-length critical appraisal, Alexander Nemerovs Fierce Poise shines a light on Helen Frankenthaler's early artistic breakthrough by blending both forms. Eleven specific and crucial days-from May 19...",
@@ -67,7 +73,7 @@ export const Items = [
        oldPrice: 26.30,
       },
       {
-       img: imgOne,
+       img: truly,
        author: 'dawnie walton',
        title: 'The Final Revival of Opal and Nev',
        descp: "If there were a genre for popular postmodem literature, The Final Revival of Opal and Nev would fall squarely within it Easy to read, and yet layered in both its organization and its impact, Dawnie Walton's novel tells the story of '70s musicians Opal and Nev and is alternatingly structured as an oral history and recurring editors' notes...",
@@ -81,21 +87,21 @@ export const Items = [
   {
     podcastsBooks: [
       {
-       img: imgOne,
+       img: truly,
        author: 'ellen jhosh',
        title: 'How are the boundaries between masculine and feminine being erased in fashion?',
        desp: "Today,you will not surprised anyone with pale pink shades of clothing in the men's department. Men in dresses appear on the red carpets,and big brands like Chanel are launching lines of men's makeup.",
        date: 'Feb11 - 30min'
       },
       {
-       img: imgOne,
+       img: list,
        author: 'ellen jhosh',
        title: 'How are the boundaries between masculine and feminine being erased in fashion?',
        desp: "Today,you will not surprised anyone with pale pink shades of clothing in the men's department. Men in dresses appear on the red carpets,and big brands like Chanel are launching lines of men's makeup.",
        date: 'Feb11 - 30min'
       },
       {
-       img: imgOne,
+       img: said,
        author: 'ellen jhosh',
        title: 'How are the boundaries between masculine and feminine being erased in fashion?',
        desp: "Today,you will not surprised anyone with pale pink shades of clothing in the men's department. Men in dresses appear on the red carpets,and big brands like Chanel are launching lines of men's makeup.",
@@ -107,49 +113,49 @@ export const Items = [
   {
     categorizedBlogs: [
       {
-        img:imgOne,
+        img:said,
         author: 'elen jhosh',
         title: 'The Definitive Helmut Newton Photobook is Reissued-in Maniature-for His 100th Birthday',
         desp: 'The photgrapher,whose provocative work rose to prominense in the 1970s against a backdrop of the second-wave feminist movement,was one of the most impactful visual creators of his time.',
         date: 'Feb 11 - 5min read'
       },
       {
-        img:imgOne,
+        img:list,
         author: 'elen jhosh',
         title: 'Made You Look:A True Story About Fake Art-When Wanting to Believe Is Just Not Enough',
         desp: 'The story of the most significant art fraud in history where ruined reputations and wounded egos mattered more than money.',
         date: 'Feb 11 - 5min read'
       },
       {
-        img:imgOne,
+        img:truly,
         author: 'elen jhosh',
         title: '5 Things White People Keep Getting Totally Wrong About Racism',
         desp: "They want to escape the harsh,unforgiving glare of culpability by pretending they've done nothing wrong, that if there are ongoing issues with racism in this country,it has nothing to do with how they raise their children. it's beacuse Black people refuse to move on.",
         date: 'Feb 11 - 5min read'
       },
       {
-        img:imgOne,
+        img:comics,
         author: 'elen jhosh',
         title: 'In London,the Most Famous "Great Woman Artist" Finally Gets Her Due',
         desp: "In july 2018,London's National Gallery acquired a slef-portrait by the Baroque artist Artemisia Gentileschi, featuring the painter in the guise of Saint Catherine of Alexandria. Almost immediately, it drew an unprecendented level of media attention.",
         date: 'Feb 11 - 5min read'
       },
       {
-        img:imgOne,
+        img:said,
         author: 'elen jhosh',
         title: 'How are the boundaries between masculine and feminine being erased in fashion?',
         desp: "Today,you will not surprised anyone with pale pink shades of clothing in the men's department. Men in dresses appear on the red carpets,and big brands like Chanel are launching lines of men's makeup",
         date: 'Feb 11 - 5min read'
       },
       {
-        img:imgOne,
+        img:list,
         author: 'elen jhosh',
         title: 'The Definitive Helmut Newton Photobook is Reissued-in Maniature-for His 100th Birthday',
         desp: 'The photgrapher,whose provocative work rose to prominense in the 1970s against a backdrop of the second-wave feminist movement,was one of the most impactful visual creators of his time.',
         date: 'Feb 11 - 5min read'
       },
       {
-        img:imgOne,
+        img:truly,
         author: 'elen jhosh',
         title: 'The Definitive Helmut Newton Photobook is Reissued-in Maniature-for His 100th Birthday',
         desp: 'The photgrapher,whose provocative work rose to prominense in the 1970s against a backdrop of the second-wave feminist movement,was one of the most impactful visual creators of his time.',

@@ -1,5 +1,6 @@
 import React from 'react'
 import { BookShopCardWrapper } from '../styles'
+import { Link } from 'react-router-dom'
 
 const BookShopCard = ({item}) => {
   return (
@@ -17,11 +18,10 @@ const BookShopCard = ({item}) => {
      <h3>${item.newPrice}</h3>
      <h3>${item.oldPrice}</h3>
      </div>
-
+         <Link to="/shoppage">
       <button>Shop now</button>
+      </Link>
      </div>
-
-
     </BookShopCardWrapper>
   )
 }

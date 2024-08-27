@@ -7,6 +7,7 @@ import PodCasts from "./components/pages/PodCasts"
 import Books from "./components/pages/Books"
 import About from "./components/pages/About"
 import CartPage from "./components/pages/CartPage"
+import ShopPage from './components/pages/ShopPage'
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route  path='/books' element={<Books />}/>
         <Route  path='/about' element={<About />}/>
         <Route  path='/cart' element={<CartPage />}/>
+        <Route path='/shoppage' element={<ShopPage />} />
         
 
       </Route>
