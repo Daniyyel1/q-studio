@@ -6,7 +6,7 @@ import BookProducts from '../subComponents/BookProducts';
 
 const ShopPage = () => {
 
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('');
 
   // function to handle search input
 
