@@ -18,7 +18,7 @@ const Books = () => {
 
       <div className="booksWrapper">
         {Items[0].bookProducts?.map((bookProduct) => {
-          return <BookCard item={bookProduct} key={bookProduct.key}/>;
+          return <BookCard item={bookProduct} />;
         })}
       </div>
 

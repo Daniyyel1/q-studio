@@ -25,8 +25,31 @@ export const NavWrapper = styled.nav`
     color: #000;
   }
 
-  .navIcons {
+  /* .navIcons {
+    border:2px solid;
+  } */
+
+  .navIcons>a{
+    font-size: 18px;
+    text-decoration: none;
     color: #000;
+    position: relative;
+  }
+
+  .navIcons>a>span{
+    position: absolute;
+    padding: .6rem;
+    top: -12px;
+    right: -.7rem;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    border-radius: 100%;
   }
 `;
 
@@ -35,9 +58,9 @@ export const BannerWrapper = styled.div`
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
 
-  .bigBanner img {
+  .bigBanner>img {
     width: 100%;
-    height: 55vh;
+    /* height: 55vh; */
   }
 
   .bgInfo,
@@ -77,7 +100,7 @@ export const BannerWrapper = styled.div`
 
   .bannerPostCard img {
     width: 100%;
-    height: 25vh;
+    /* height: 25vh; */
   }
 
   .bannerPostCard h2 {
@@ -111,7 +134,7 @@ export const TrendingWrapper = styled.section`
 
   .trendBox img {
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
   }
 
   .trendBox h2 {
@@ -178,7 +201,7 @@ export const ArticlesWrapper = styled.section`
 
   .artBox img {
     width: 300px;
-    height: 30vh;
+    /* height: 30vh; */
   }
 
   .artInfo span {
@@ -329,7 +352,7 @@ export const BookContainer = styled.div`
 export const BookCardWrapper = styled.section`
   img {
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
   }
 
   h1 {
@@ -357,8 +380,8 @@ export const BookShopCardWrapper = styled.section`
   padding-block: 1rem;
 
   img {
-    height: 270px;
-    width: 180px;
+    /* height: 270px; */
+    width: 27%;
   }
 
   .wrapperD span {
