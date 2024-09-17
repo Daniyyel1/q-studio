@@ -337,6 +337,16 @@ export const BookContainer = styled.div`
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
   }
+
+  button{
+    width:100%;
+    height:40px;
+    margin-top:20px;
+    font-size:15px;
+    font-weight:600;
+    cursor: pointer;
+  }
+
 `;
 
 export const BookCardWrapper = styled.section`
@@ -409,12 +419,7 @@ export const BookShopCardWrapper = styled.section`
   .span h3:first-child {
     font-size: 33px;
   }
-
-  .span h3:last-child {
-    opacity: 0.3;
-    text-decoration: line-through;
-  }
-`;
+`
 
 export const BlogCardWrapper = styled.section`
   display: flex;
@@ -511,15 +516,8 @@ export const ShopWrapper =  styled.div`
         outline: none;
         padding: .3rem 1rem;
     }
-
-    .book_product_container{
-      margin-top: 2rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
 `
+
 
 // styling for book product wrapper 
 export const BookProductWrapper = styled.div`

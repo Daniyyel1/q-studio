@@ -24,7 +24,6 @@ const Books = () => {
 
       <BlogT />
       <BookShops />
-      {/* button code */}
     </BookContainer>
   );
 };

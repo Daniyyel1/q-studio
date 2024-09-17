@@ -13,6 +13,7 @@ const location = useLocation();
       <h1>{location.pathname.replace(/\//g, " ")}</h1>
       <Trending />
       <BlogT />
+      <button>Show more</button>
     </div>
   )
 }

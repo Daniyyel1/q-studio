@@ -20,3 +20,4 @@ const Search = ({onChange}) => {
 };
 
 export default Search;
+
