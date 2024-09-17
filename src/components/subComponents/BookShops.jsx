@@ -6,7 +6,7 @@ const BookShops = () => {
   return (
     <div className="bookShopWrapper">
       {Items[1].categorizedBooks?.map((categorizedBook) => {
-        return <BookShopCard item={categorizedBook} key={categorizedBook.key} />;
+        return <BookShopCard item={categorizedBook} />;
       })}
     </div>
   );

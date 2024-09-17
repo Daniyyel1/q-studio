@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const BookShopCard = ({ item }) => {
   return (
-    <BookShopCardWrapper>
+    <BookShopCardWrapper key={item.author}>
       <img src={item.img} alt="book" />
 
       
