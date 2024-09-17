@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 const BookShopCard = ({item}) => {
   return (
-    <BookShopCardWrapper>
-     
 
-     <img src={item.img} alt='book' />
+    <BookShopCardWrapper key={item.author}>
+      <img src={item.img} alt="book" />
+
       
         <div className="wrapperD">
      <span>by {item.author}</span>

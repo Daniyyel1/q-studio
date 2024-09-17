@@ -10,6 +10,7 @@ export const Items = [
   {
     bookProducts: [
       {
+        id: 1,
         img: imgOne,
         title: "whats mine and yours",
         author: "Harsey Street",
@@ -17,6 +18,7 @@ export const Items = [
       },
 
       {
+        id: 2,
         img: imgOne,
         title: "The Committed: A Novel",
         author: "Viet Thanh Nguyen",
@@ -24,6 +26,7 @@ export const Items = [
       },
 
       {
+        id: 3,
         img: imgOne,
         title: "Come Fly the World: Stories",
         author: "Julia Cooke",
@@ -31,6 +34,7 @@ export const Items = [
       },
 
       {
+        id: 4,
         img: imgOne,
         title: "Klara and the Sun: A novel",
         author: "Kuzuo Ishiguro",

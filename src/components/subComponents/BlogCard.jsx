@@ -14,7 +14,7 @@ const BlogCard = ({ item }) => {
 
         <div className="infoTag">
           <span>{item.date}</span>
-          <Link to={`/book/${item.author}`}>click for more...</Link>
+          <Link to={`/book/${item.author}`}>Read more...</Link>
         </div>
       </div>
     </BlogCardWrapper>
