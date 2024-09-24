@@ -31,12 +31,26 @@ export const BookProvider = ({ children }) => {
     localStorage.setItem("selectedBooks", JSON.stringify(addedBook));
   }, [addedBook]);
 
+  // function to delete/remove book from Cart
+    const removeFromCart = (bookId) => {
+      const exist = addedBook.find((x) => x.id === bookId);
+      if (exist.qty === 1) {
+        setAddedBook(addedBook.filter((x) => x.id !== bookId));
+      } else {
+        setAddedBook(
+          addedBook.map((x) =>
+            x.id === bookId ? { ...exist, qty: exist.qty - 1 } : x
+          )
+        );
+      }
+    };
+
   return (
     <BookContext.Provider
       value={{
         addedBook,
         addToCart,
-        // removeFromCart,
+        removeFromCart,
       }}
     >
       {children}

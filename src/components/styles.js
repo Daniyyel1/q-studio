@@ -5,6 +5,7 @@ export const NavWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding-block: 1rem;
+  /* border: 2px solid red; */
 
   .navRight {
     width: 600px;
@@ -29,18 +30,18 @@ export const NavWrapper = styled.nav`
     border:2px solid;
   } */
 
-  .navIcons>a{
+  .navIcons > a {
     font-size: 18px;
     text-decoration: none;
     color: #000;
     position: relative;
   }
 
-  .navIcons>a>span{
+  .navIcons > a > span {
     position: absolute;
-    padding: .6rem;
+    padding: 0.6rem;
     top: -12px;
-    right: -.7rem;
+    right: -0.7rem;
     background-color: #000;
     color: #fff;
     display: flex;
@@ -58,7 +59,7 @@ export const BannerWrapper = styled.div`
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
 
-  .bigBanner>img {
+  .bigBanner > img {
     width: 100%;
     /* height: 55vh; */
   }
@@ -425,13 +426,13 @@ export const BlogCardWrapper = styled.section`
     height: 190px;
     width: 300px;
   }
-  .infoTag{
+  .infoTag {
     display: flex;
     opacity: 0.5;
     justify-content: space-between;
   }
 
-  .infoTag>span {
+  .infoTag > span {
     text-transform: capitalize;
     display: block;
     opacity: 0.5;
@@ -494,39 +495,241 @@ export const PodcastsShopCardWrapper = styled.section`
   }
 `;
 
-
 // styling for shop page
-export const ShopWrapper =  styled.div`
-    /* border: 2px solid red; */
+export const ShopWrapper = styled.div`
+  /* border: 2px solid red; */
 
-    .searchInput{
-      border-bottom: 2px solid black;
-      max-width: 400px;
-      margin: 2rem auto;
-    }
+  .searchInput {
+    border-bottom: 2px solid black;
+    max-width: 400px;
+    margin: 2rem auto;
+  }
 
-    .searchInput>input{
-        width: 100%;
-        border: none;
-        outline: none;
-        padding: .3rem 1rem;
-    }
+  .searchInput > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.3rem 1rem;
+  }
 
-    .book_product_container{
-      margin-top: 2rem;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+  .book_product_container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+`;
 
-`
-
-// styling for book product wrapper 
+// styling for book product wrapper
 export const BookProductWrapper = styled.div`
-  .bookImg{
+  .bookImg {
     /* border: 2px solid red; */
     width: 100%;
   }
+`;
 
+// styling for cartpage
+export const CartPageWrapper = styled.div`
+  .cartBody {
+    padding-block: 5rem;
+    /* border: 2px solid red; */
+    width: 80%;
+  }
+  .empty-cart {
+    text-align: center;
+    padding-block: 5rem;
+  }
 
-`
+  .img-fluid {
+    width: 30%;
+  }
+
+  .empty-cart p {
+    margin-bottom: 30px;
+  }
+  .empty-cart a {
+    text-decoration: none;
+    background: #794e21;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  .empty-cart a:hover {
+    background-color: black;
+    color: #fff;
+  }
+  .total {
+    width: 30%;
+    /* flex: 1; */
+    padding-inline: 2rem;
+    border: 2px solid #794e21;
+
+    h1 {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 7px;
+      text-transform: capitalize;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      text-transform: capitalize;
+      letter-spacing: 3px;
+    }
+  }
+  .ending {
+    display: flex;
+    justify-content: space-between;
+    /* background: #e4cfc4; */
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 1rem;
+    margin-block: 1rem;
+  }
+  .ending p,
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .btn__btn {
+    margin-block: 2rem;
+    border-radius: 7px;
+
+    .formInput {
+      border-bottom: 2px solid #794e21;
+      margin-bottom: 0.7rem;
+
+      label {
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.3rem;
+        border: none;
+        outline: none;
+        font-size: 17px;
+      }
+    }
+
+    button {
+      color: white;
+      background: #000;
+      /* background: #794e21; */
+      padding: .6rem 1.2rem;
+      cursor: pointer;
+      border: none;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 12px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: blue;
+        color: white;
+        border-radius: 7px;
+      }
+      &:disabled {
+        background-color: gray;
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    overflow: hidden;
+
+    .total {
+      max-width: 350px;
+    }
+
+    .scroll__bar {
+      width: 380px;
+      overflow: auto;
+    }
+
+    .img-fluid {
+      width: 50%;
+    }
+
+    .btn__btn {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+`;
+
+export const CartBody = styled.table`
+  width: 100%;
+  margin-top: 1.5rem;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  /* gap: 3rem; */
+  justify-content: space-between;
+
+  th {
+    padding-block: 15px;
+    border-bottom: 2px solid #794e21;
+  }
+  td {
+    padding-inline: 15px;
+    border-bottom: 2px solid #794e21;
+  }
+  .del {
+    color: red;
+    font-size: 30px;
+    margin-right: 2.7rem;
+    cursor: pointer;
+  }
+
+  .left {
+    background: red;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 1rem;
+  }
+  .right {
+    background: green;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 1rem;
+  }
+
+  @media (max-width: 950px) {
+    .left {
+      padding: 4px 16px;
+      margin-bottom: 10rem;
+    }
+    .right {
+      padding: 4px 16px;
+      margin-top: 10rem;
+    }
+  }
+`;
+
+export const CartImgCont = styled.div`
+  // border: 2px solid black;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 950px) {
+    width: 80px;
+    height: 80px;
+  }
+`;
