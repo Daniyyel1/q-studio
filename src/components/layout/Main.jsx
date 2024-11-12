@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { Outlet } from 'react-router-dom'
+import Subscribe from '../subComponents/Subscribe'
 
 
 
@@ -13,6 +14,7 @@ const Main = () => {
 
        <Outlet />
 
+    <Subscribe />
     <Footer />
     </main>
   )

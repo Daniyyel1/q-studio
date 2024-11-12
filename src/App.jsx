@@ -10,6 +10,7 @@ import About from "./components/pages/About";
 import CartPage from "./components/pages/CartPage";
 import ShopPage from "./components/pages/ShopPage";
 import BookDetailsPage from "./components/subComponents/BookDetailsPage";
+import BlogDetailsPage from "./components/subComponents/BlogDetailsPage";
 import { BookProvider } from "./contexts/BookContext";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/podcasts" element={<PodCasts />} />
             <Route path="/books" element={<Books />} />
             <Route path="book/:id" element={<BookDetailsPage />} />
+            <Route path="blog/:id" element={<BlogDetailsPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/shop" element={<ShopPage />} />

@@ -234,28 +234,29 @@ export const ArticlesWrapper = styled.section`
   }
 `;
 
-export const BlogWrapper = styled.section`
-  padding-block: 4rem;
-
-  .blogT {
+export const CategoryWrapper = styled.div`
+    margin-block: 3rem;
     border-block: 2px solid #e2e2e2;
     padding-block: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-  }
 
-  .blogT a {
+    a {
     font-size: 19px;
     text-decoration: none;
     color: #000;
     text-transform: capitalize;
   }
 
-  .blogT a:nth-child(1) {
+  a:nth-child(1) {
     text-decoration: underline;
   }
+`
+
+export const BlogWrapper = styled.section`
+  /* padding-block: 4rem; */
 
   .artWrapper {
     display: grid;
@@ -303,6 +304,8 @@ export const BlogWrapper = styled.section`
 `;
 
 export const BWrapper = styled.section`
+    margin-block: 2rem;
+
   .topArticles {
     border-block: 2px solid #e2e2e2;
     padding-block: 0.7rem;
@@ -368,18 +371,25 @@ export const BookCardWrapper = styled.section`
 export const BookShopCardWrapper = styled.section`
   display: flex;
   gap: 30px;
-  padding-block: 1rem;
+  height: 40vh;
+  margin-bottom: 2rem;
 
-  img {
-    /* height: 270px; */
+  .imgCont {
     width: 27%;
+  }
+
+  .imgCont > img {
+    height: 100%;
+    width: 100%;
+  }
+  .wrapperD {
+    width: 70%;
   }
 
   .wrapperD span {
     text-transform: uppercase;
     font-size: 12px;
     opacity: 0.6;
-    display: block;
   }
 
   .wrapperD h2 {
@@ -389,7 +399,6 @@ export const BookShopCardWrapper = styled.section`
 
   .wrapperD p {
     opacity: 0.6;
-    width: 780px;
     padding-block: 0.5rem;
   }
 
@@ -733,3 +742,47 @@ export const CartImgCont = styled.div`
     height: 80px;
   }
 `;
+
+// styling for subscribe component
+export const SubscribeWrapper = styled.div`
+  border-block: 2px solid gray;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .subscribe__content{
+    max-width: 670px;
+    margin: auto;
+  }
+
+  .subscribe__content > h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .subscribe__content  > p{
+    text-align: center;
+    margin-block: 2rem;
+    opacity: .7;
+  }
+
+  .subscribe__btns{
+    display: flex;
+    gap: 4rem;
+  }
+
+  .subscribe__btns > button{
+    /* flex: 1; */
+    width: 70%;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+  }
+
+  .subscribe__btns > button:first-child{
+    width: 30%;
+  }
+`
