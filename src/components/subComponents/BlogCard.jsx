@@ -17,6 +17,7 @@ const BlogCard = ({ item }) => {
           <Link to={`/book/${item.author}`}>Read more...</Link>
         </div>
       </div>
+      
     </BlogCardWrapper>
   );
 };

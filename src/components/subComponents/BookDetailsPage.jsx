@@ -10,7 +10,10 @@ const BookDetailsPage = () => {
     <div className="genLayout">
       <Link to="/books">Back</Link>
 
+      <img src={book.img} alt= 'img' />
+
       <div>{book.desp}</div>
+      
     </div>
   );
 };
