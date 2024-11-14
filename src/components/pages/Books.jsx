@@ -1,11 +1,12 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import Bway from "../subComponents/Bway";
 import { Items } from "../../Data";
 import BookCard from "../subComponents/BookCard";
 import { BookContainer } from "../styles";
 import BlogT from "../subComponents/BlogT";
 import BookShops from "../subComponents/BookShops";
+import Categories from "../subComponents/Categories";
 
 const Books = () => {
   const location = useLocation();
@@ -22,7 +23,16 @@ const Books = () => {
         })}
       </div>
 
-      <BlogT />
+      <Categories>
+        <Link to="#">View all</Link>
+        <Link to="#">Self-education</Link>
+        <Link to="#">Psychology</Link>
+        <Link to="#">Business</Link>
+        <Link to="#">Novel</Link>
+        <Link to="#">Art</Link>
+      </Categories>
+
+      {/* <BlogT /> */}
       <BookShops />
     </BookContainer>
   );

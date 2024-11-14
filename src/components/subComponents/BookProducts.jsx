@@ -18,7 +18,7 @@ const BookProducts = ({item}) => {
    <h3>${item.newPrice}</h3>
    <h3>${item.oldPrice}</h3>
    </div>
-       <Link to="/shoppage">
+       <Link to="/shop">
     <button>Shop now</button>
     </Link>
    </div>

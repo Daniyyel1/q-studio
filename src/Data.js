@@ -46,7 +46,7 @@ export const Items = [
     categorizedBooks: [
       {
        img: said,
-       author: 'elen jhosh',
+       author: 'elen jhoshhhhhhqqqqq',
        title: 'Be Where Your Feet Are: Seven Principles to Keep You Present, Grounded, and Thriving',
        descp: 'When we are moving at 115 MPH, we rarely see the wall coming. But it comes for all of us. The sudden loss of a much beloved friend, the excruciatingly long departure of a parent with Alzheimer, We grasp for lessons for meaning, for learnings.',
        newPrice: 25.00,

@@ -44,6 +44,7 @@ const CartPage = () => {
                 </tr>
 
                 {addedBook.map((book) => {
+
                   return (
                     <tr>
                       <td>
