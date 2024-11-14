@@ -1,12 +1,14 @@
-import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { RiDeleteBinLine } from "react-icons/ri";
-import BookContext from '../../contexts/BookContext';
+import BookContext from "../../contexts/BookContext";
 import cart from "../../assets/cart.png";
-import { CartBody, CartImgCont, CartPageWrapper } from '../styles';
+import { CartBody, CartImgCont, CartPageWrapper } from "../styles";
+import PaystackPop from "@paystack/inline-js";
+
 
 const CartPage = () => {
-  const [email, setEmail] = useState("")
+  const [email, setEmail] = useState("");
   // using context
   const { addedBook, removeFromCart, addToCart } = useContext(BookContext);
 
@@ -17,107 +19,124 @@ const CartPage = () => {
     0
   );
 
+  // function to handle paystack payment
+  const handlePayment = (e) => {
+    e.preventDefault();
 
+    const paystack = new PaystackPop();
+    paystack.newTransaction({
+      key: "pk_test_caf651a9be19d6c43831fc848bc81aa2714783cf",
+      amount: totalPrice * 100,
+      email: email,
+
+      onSuccess(transcation) {
+        let message = `Payment Complete!! Reference ${transcation.reference}`;
+        alert(message);
+        setEmail("");
+      },
+
+      onCancel() {
+        alert("You are about to cancel the transaction!!!");
+      },
+    });
+  };
 
   return (
     <CartPageWrapper>
       {addedBook.length === 0 ? (
-          <div className="empty-cart">
-            <img src={cart} className="img-fluid" alt="cart" />
-            <h3>Your cart is empty</h3>
-            <p style={{ color: "#794e21" }}>
-              Start shopping to add items to your cart
-            </p>
-            <Link to="/">Back to homepage</Link>
-          </div>
-        ) : (
-          <CartBody className='genLayout'>
-            <div className="scroll__bar">
-              <div className='cartBody'>
-                <tr>
-                  <th>Products</th>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Total</th>
-                  <th>Remove</th>
-                </tr>
+        <div className="empty-cart">
+          <img src={cart} className="img-fluid" alt="cart" />
+          <h3>Your cart is empty</h3>
+          <p style={{ color: "#794e21" }}>
+            Start shopping to add items to your cart
+          </p>
+          <Link to="/">Back to homepage</Link>
+        </div>
+      ) : (
+        <CartBody className="genLayout">
+          {/* table that shows added books */}
+          <div className="scroll__bar">
+            <div className="cartBody">
+              <tr>
+                <th>Products</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+              </tr>
 
-                {addedBook.map((book) => {
-
-                  return (
-                    <tr>
-                      <td>
-                        <CartImgCont>
-                          <img src={book.img} alt="coffee" />
-                        </CartImgCont>
-                      </td>
-                      <td>{book.title}</td>
-                      <td>#{book.price}</td>
-                      <td>
-                        <div>
-                          <span
-                            className="left"
-                            onClick={() => removeFromCart(book.id)}
-                          >
-                            -
-                          </span>
-                          <span className="middle">{book.qty}</span>
-                          <span
-                            className="right"
-                            onClick={() => addToCart(book)}
-                          >
-                            +
-                          </span>
-                        </div>
-                      </td>
-                      <td>{book.price * book.qty}</td>
-                      <td>
-                        <RiDeleteBinLine
-                          className="del"
+              {addedBook.map((book) => {
+                return (
+                  <tr>
+                    <td>
+                      <CartImgCont>
+                        <img src={book.img} alt="coffee" />
+                      </CartImgCont>
+                    </td>
+                    <td>{book.title}</td>
+                    <td>#{book.price}</td>
+                    <td>
+                      <div>
+                        <span
+                          className="left"
                           onClick={() => removeFromCart(book.id)}
-                        />
-                      </td>
-                    </tr>
-                  );
-                })}
-              </div>
+                        >
+                          -
+                        </span>
+                        <span className="middle">{book.qty}</span>
+                        <span className="right" onClick={() => addToCart(book)}>
+                          +
+                        </span>
+                      </div>
+                    </td>
+                    <td>{book.price * book.qty}</td>
+                    <td>
+                      <RiDeleteBinLine
+                        className="del"
+                        onClick={() => removeFromCart(book.id)}
+                      />
+                    </td>
+                  </tr>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* card that show cart total */}
+          <div className="total">
+            <h1>cart total</h1>
+            <div className="ending">
+              <h3>Total Price</h3>
+              <p>#{totalPrice}</p>
             </div>
 
-            <div className="total">
-              <h1>cart total</h1>
-              <div className="ending">
-                <h3>Total Price</h3>
-                <p>#{totalPrice}</p>
+            <p>enter email to proceed to checkout</p>
+            <div className="btn__btn">
+              <div className="formInput">
+                <label htmlFor="email">email address:</label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
               </div>
 
-
-                <p>enter email to proceed to checkout</p>
-              <div className="btn__btn">
-                <div className="formInput">
-                  <label htmlFor="email">email address:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  // onClick={handlePayment}
-                  disabled={email.length < 1}
-                >
-                  proceed to checkout (#{totalPrice})
-                </button>
-              </div>
+              <button
+                type="submit"
+                onClick={handlePayment}
+                disabled={email.length < 1}
+              >
+                proceed to checkout (#{totalPrice})
+              </button>
             </div>
-          </CartBody>
-        )}
+          </div>
+        </CartBody>
+      )}
     </CartPageWrapper>
-  )
-}
+  );
+};
 
-export default CartPage
+export default CartPage;
